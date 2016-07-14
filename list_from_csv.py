@@ -46,16 +46,6 @@ second_half_list = list_names[len(list_names)/2:]
 dict_of_pairings = dict(zip(first_half_list, second_half_list))
 dict_of_pairings.update(dict(zip(second_half_list, first_half_list))) #add second half
 
-"""
-take one grouping and add a third person, if there is a temp variable
-1. update dict of pairings, add a value for {'third person': 'pair of people'}
-    a. dict_of_pairings.update('third person') = (first_half_list(0) +dict_of_pairings(first_half_list(0))
-2. update THAT pairing to reflect that there is now a third person in that group
-     a. temp_string_person0 = temp + dict(first_half_list(0))
-          1. dict((first_half_list(0))= temp_string_person1
-    b. temp_string_person1 = temp + first_half_list(0)
-        2. dict(dict(first_half_list(0)) = temp_string_person1
-"""
 
 if listWasOdd:
    group_of_three(temp)
