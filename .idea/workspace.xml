@@ -27,11 +27,14 @@
       <file leaf-file-name="list_from_csv.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list_from_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+            <state relative-caret-position="306">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#132#535#0" expanded="false" />
+                <element signature="e#564#637#0" expanded="false" />
+                <element signature="e#669#1243#0" expanded="false" />
+                <element signature="e#1732#2316#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -322,6 +325,14 @@
       <option name="presentableId" value="Default" />
       <updated>1467924033111</updated>
     </task>
+    <task id="LOCAL-00001" summary="first half of dict is completed">
+      <created>1468509529811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468509529811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -333,7 +344,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2925878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.087126136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -358,6 +369,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first half of dict is completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="first half of dict is completed" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
@@ -375,6 +390,9 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#132#535#0" expanded="false" />
+            <element signature="e#564#637#0" expanded="false" />
+            <element signature="e#669#1243#0" expanded="false" />
+            <element signature="e#1732#2316#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,6 +404,9 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#132#535#0" expanded="false" />
+            <element signature="e#564#637#0" expanded="false" />
+            <element signature="e#669#1243#0" expanded="false" />
+            <element signature="e#1732#2316#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -401,11 +422,14 @@
     <entry file="file://$PROJECT_DIR$/LICENSE.md" />
     <entry file="file://$PROJECT_DIR$/list_from_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#132#535#0" expanded="false" />
+            <element signature="e#564#637#0" expanded="false" />
+            <element signature="e#669#1243#0" expanded="false" />
+            <element signature="e#1732#2316#1" expanded="false" />
           </folding>
         </state>
       </provider>
