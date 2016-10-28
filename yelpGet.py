@@ -1,5 +1,6 @@
 from yelp.client import Client
 from yelp.oauth1_authenticator import Oauth1Authenticator
+from random import shuffle
 
 def init_client():
     auth = Oauth1Authenticator(
@@ -12,17 +13,29 @@ def init_client():
     client = Client(auth)
     return client
 
+
 def define_parameters():
     kwargs = {
         'distance': 1600,
-        'term' : 'coffee',
+        'term' : 'Coffee',
         'sort' : 2
     }
     return kwargs
 
+
 def search(client):
     search_results = client.search_by_coordinates(42.3539305,-71.05898, **kwargs)
     return search_results
+
+list = []
+client = init_client()
+kwargs = define_parameters()
+results = search(client)
+for business in results.businesses:
+    list.append(business)
+
+shuffle(list)
+print list[0].name
 """
 The way you would run this code would be:
 1. Command line: pip install yelp
