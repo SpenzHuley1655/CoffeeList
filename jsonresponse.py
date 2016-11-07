@@ -95,17 +95,71 @@ def get_nth_busy(a_list,n):
 # iterate through each list,
 # checking to see if there are non-overlapping windows of free time
 def find_free(obj1, obj2):
+    pivot = busy_status(obj1, obj2)
+    meeting = get_meeting(pivot, obj1, obj2)
+    for x in range(0, len(obj1)):
+        for y in range(0, len(obj2)):
+            if is_room(get_nth_busy(obj1, x), get_nth_busy(obj2, y)):
+                meeting['start'] = retrieve_start(obj1[x], obj2[y])
+                meeting['end'] = retrieve_end(meeting['start'])
+                break
+
+    return meeting
+# Number [List-of Dict] [List-of Dict] -> Dict
+# find a meeting spot in a dict format
+# return empty list if no valid meeting time is found
+def get_meeting(pivot, obj1, obj2):
+    meeting = {} 
+    if pivot == 0:
+        meeting['start'] = noon
+        meeting['end'] = retrieve_end(meeting['start'])
+    elif pivot == 1:
+        meeting = one_empty(obj1)
+    elif pivot == 2:
+        meeting = one_empty(obj2)
+    else 
+        meeting = normal_meeting(obj1, obj2)
+    return meeting 
+       
+# [List-of Dict] [List-of Dict]
+# retrieve a meeting time in the event that the two people
+# both have events on their calendars
+
+def normal_meeting(obj1, obj2):
     meeting = {}
     for x in range(0, len(obj1)):
         for y in range(0, len(obj2)):
             if is_room(get_nth_busy(obj1, x), get_nth_busy(obj2, y)):
-                print "Found meeting time!"
-                print x
-                print y
                 meeting['start'] = retrieve_start(obj1[x], obj2[y])
                 meeting['end'] = retrieve_end(meeting['start'])
                 break
     return meeting
+# [list-of dict]  -> dict
+# find the first 30 minute open spot on a person's calendar
+def one_empty(obj, email):
+    busy_list = get_busy(obj, email)
+    if len(busy_list) == 1:
+        meeting['start'] = dp.parse(obj[0]['end'])
+        meeting['end'] = retrieve_end(meeting['start'])
+    else:
+        for x in range(0, len(busy_list) - 1):
+            if is_room(get_nth_busy(obj, x), get_nth_busy(obj, x+1)):
+                meeting['start'] = retrieve_start(obj[x], obj[x+1])
+                meeting['end'] = retrieve_end(meeting['start'])
+    return meeting
+
+# [List-of Dict] [List-of Dict] -> Dict
+# determine whether one or both of the calendars are empty
+def busy_status(obj1, obj2):
+    if len(obj1) == 0 & len(obj2) == 0:
+        indicator = 0 
+    elif len(obj1) == 0:
+        indicator = 1
+    elif len(obj2) == 0:
+        indicator = 2
+    else:
+        indicator = 3
+    return indicator
 
 # dict dict -> Boolean
 # is there room for a 30 minute meeting between these two dicts?
