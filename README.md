@@ -1,3 +1,4 @@
 Kevin/Chris:
 
-Hi! See the notes in JSONClass.py. I'm adding more stuff in a hot sec.
+Hi! Read mainprogram.py for the overall structure of the program. Still some work to be done, but I've
+put a lot of comments throughout that will hopefully help bring this together.
