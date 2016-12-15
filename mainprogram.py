@@ -40,5 +40,12 @@ for key in dict_of_pairings: # <--- dict_of_pairings from Kevin's program
 """
 
 
+# There are two functions that must be designed here to interact with Google Calendar
+# The first, make_google_request, in line 28, requires use of the freebusy() module mentioned in the Developer Docs. 
+# https://developers.google.com/resources/api-libraries/documentation/calendar/v3/python/latest/calendar_v3.freebusy.html
 
+# The second, make_event, which I believe will be easier, requires the insert event method, also through the Google Calendar API.
+# https://developers.google.com/resources/api-libraries/documentation/calendar/v3/python/latest/calendar_v3.events.html#insert
+
+# I know this is kind of murky, please call/email me and I can walk you through setting up the API. 
 
