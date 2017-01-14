@@ -6,7 +6,7 @@ put a lot of comments throughout that will hopefully help bring this together.
 
 The only important files currently here are jsonClass.py, TNY_COMMIT1.py, and mainprogram.py. Everything else is irrelevant. 
 
-The Google Calendar API continues to really confuse me.
+Haven't had time to work out the nuances of the Google Calendar API.
 Chris, I hope that you have more luck deciphering some of the notes that they use to explain things. 
 https://developers.google.com/google-apps/calendar/quickstart/python
 
